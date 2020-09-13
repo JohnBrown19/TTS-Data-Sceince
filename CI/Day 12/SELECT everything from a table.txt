@@ -1,0 +1,17 @@
+SELECT everything from a table --*
+
+SELECT exactly one column from a table. SELECT more than one but not all columns from a table --*
+
+SELECT everything from the songs table whose id numbers are even and greater than 50, or odd and less than ten.
+
+INSERT ten new records into the User table. They can be real or finctional individsuals.
+
+UPDATE the User table and change some names. When you UPDATE, do not forget to put CURRENT_TIMESTAMP into UpdatedAt. That way, you always know when the last update was.
+
+Use a TRANSACTION/ROLLBACK window to DELETE everything from the User table.
+
+For each user in the User table, add a record to the Favorite table, but only INSERT for UserID (the FK), and CreatedAt.
+
+Use a TRANSACTION/ROLLBACK window to DELETE everything from the Favorite table WHERE the FavoriteID is odd, or even but greater than
+
+Put "SELECT * FROM Favorite;" in the window to make sure you delete only those records you should!
