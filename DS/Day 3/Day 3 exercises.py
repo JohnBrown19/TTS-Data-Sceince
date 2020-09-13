@@ -1,0 +1,81 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Aug 25 20:35:30 2020
+
+@author: Jbrown
+"""
+
+import random
+import string
+#Exercise #4
+#Check attendance for 75% or less
+#use input()
+
+# classes_held = int(input("How many classes are held (Integer): "))
+# classes_attended = int(input("How many classes did they attend (Integer): "))
+# percent_attended = float(classes_attended/classes_held)
+# print(percent_attended)
+
+# if percent_attended < 0.75:
+#     print("Student cannot sit in the exam.")
+# else:
+#     print("Student may sit in the exam.")
+    
+#1
+#Guess a number between 1 and 9
+    
+# guess = int(input("Give us a number between one and nine: "))
+# our_guess = random.randint(1, 9)
+
+# if our_guess == guess:
+#     print("We guessed that your number was " + str(guess) + "!")
+# else:
+#     print("Sorry. your number was " + str(guess) + " and we guessed " + str(our_guess) + ".")
+    
+"""Alt. way from instructor 
+target_num, guess_num = random.randint(1, 10), 0
+while target_num != guess_num:
+    guess_num = int(input('Guess a number between 1 and 10 until you get it right : '))
+print('You guessed correct!')
+"""
+
+#2
+validPword = input("Please input a valid password: ")
+upper = string.ascii_uppercase
+lower = string.ascii_lowercase
+specChar = '#$@'
+numbers = '0123456789'
+length = len(validPword)
+
+verify_upper = 0
+verify_lower = 0
+verify_char = 0
+verify_num = 0
+verify_length = 0
+#verify = verify_upper + verify_lower + verify_char + verify_num + verify_length
+
+#while verify < 5:
+for i in validPword:
+    if i in upper:
+        verify_upper = 1
+    if i in lower:
+        verify_lower = 1
+    if i in specChar:
+        verify_char = 1
+    if i in numbers:
+        verify_num = 1
+    if 6 <= length <= 16:
+        verify_length = 1
+verify = verify_upper + verify_lower + verify_char + verify_num + verify_length
+if verify < 5:
+    print("Sorry. This is not a valid password. Try again. ")
+    #validPword = input("Please input a valid password: ")
+else:
+    print("This is a valid password!")
+
+            
+    
+#3
+    
+#4
+
