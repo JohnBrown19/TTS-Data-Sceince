@@ -5,20 +5,42 @@ Created on Tue Sep  1 11:11:15 2020
 @author: infer
 """
 import random
-import string
-#import re
+import re
 #1
-userGuess = int(input("Pick a number between 1 and 9 for us to guess:"))
-ourGuess = random.randint(1, 9)
-if userGuess == ourGuess:
-    print("Aha! we guess your number " + str(userGuess) + "!")
-else:
-    print("Alas! we guessed " + str(ourGuess) + ", but your number was " + str(userGuess) + ".")
+# userGuess = int(input("Pick a number between 1 and 9 for us to guess:"))
+# ourGuess = random.randint(1, 9)
+# if userGuess == ourGuess:
+#     print("Aha! we guess your number " + str(userGuess) + "!")
+# else:
+#     print("Alas! we guessed " + str(ourGuess) + ", but your number was " + str(userGuess) + ".")
 #2
-# userPword = list(input("Please input a valid password: "))
-# if len(userPword) < 6 or len(userPword) > 16:
-#     print("not a valid password length. Makre sure the password is between 6 adn 16 characters")
-#     userPword = list(input("Please input a valid password: "))
+# password = input("Please input your password: ")
+# valid = True
+# while valid:
+#     if (len(password) < 6 or len(password) > 16):
+#         print("Password is not between 6 adn 16 characters. Try again.")
+#         password = input("Please input your password: ")
+#         break
+#     elif not re.search("[a-z]", password):
+#         print("Password missing at least one lowercase letter. Try again.")
+#         password = input("Please input your password: ")
+#         break
+#     elif not re.search("[A-Z]", password):
+#         print("Password missing at least one uppercase letter. Try again.")
+#         password = input("Please input your password: ")
+#         break
+#     elif not re.search("[0-9]", password):
+#         print("Password missing at least one number. Try again.")
+#         password = input("Please input your password: ")
+#         break
+#     elif not re.search("[$#@]", password):
+#         print("Password missing at least one special character. Try again.")
+#         password = input("Please input your password: ")
+#         break
+#     else:
+#         print("This is a valid password.")
+#         x = False
+#         break
     
 #3
 # userAges = input("Give us the names, ages of three uses to see who is the oldest and youngest among them: ")
@@ -50,22 +72,3 @@ else:
 #     print("weird")
 # elif userInteger % 2 == 0 and userInteger > 20:
 #     print("Not weird")
-
-
-# validPword = False
-# while validPword == False:
-#     userPword = input("Please input a valid password: ")
-#     if len(userPword) < 6 or len(userPword) > 16:
-#         print("not a valid password length. Makre sure the password is between 6 and 16 characters")
-#         #userPword = input("Please input a valid password: ")
-    
-#     else:
-#         print("This is a valid password")
-#         validPword = True
-
-
-#2 
-#upper = string.ascii_uppercase
-#lower = string.ascii_lowercase
-#numbers = '0123456789'
-#char = " """
